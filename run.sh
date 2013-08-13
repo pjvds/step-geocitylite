@@ -1,9 +1,9 @@
 #!/bin/sh
-set -e
 set -x
 
 if [ ! -f $WERCKER_CACHE_DIR/GeoLiteCity.dat ]; then
   cd /tmp
+  rm GeoLiteCity*
   curl -O http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
   gunzip GeoLiteCity.dat.gz
   cp GeoLiteCity.dat $WERCKER_CACHE_DIR
