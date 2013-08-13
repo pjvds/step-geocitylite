@@ -1,0 +1,3 @@
+name: install-geocitylite
+version: 0.0.1
+description: Installs the geocitylite db from maxmind in /usr/share/GeoIP/GeoLiteCity.dat
